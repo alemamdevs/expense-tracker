@@ -63,7 +63,7 @@ Source of truth for scope: `PLAN.md`.
 | T025 | Create `BalanceCard` component (glass summary card, currency-aware) | done | T017, T001 |
 | T026 | Create `TransactionItem` child component (keyed `transaction-{{ $id }}`) | done | T009, T017 |
 | T027 | Create `EmptyState` component | done | T001 |
-| T028 | Build `Home` screen (greeting/header, current month, BalanceCard, recent 5, empty state) | pending | T020, T025, T026, T027, T023 |
+| T028 | Build `Home` screen (greeting/header, current month, BalanceCard, recent 5, empty state) | done | T020, T025, T026, T027, T023 |
 
 ## Phase 5 — Transaction CRUD
 
