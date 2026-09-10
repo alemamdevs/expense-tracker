@@ -26,18 +26,18 @@ Source of truth for scope: `PLAN.md`.
 
 | ID | Task | Status | Depends on |
 |----|------|--------|------------|
-| T006 | Create `categories` migration (name, type, icon, color, timestamps) | pending | T004 |
-| T007 | Create `transactions` migration (category_id FK restrict, type, amount integer minor units, note, transaction_date) | pending | T006 |
-| T008 | Create `settings` migration (key unique, value, timestamps) | pending | T004 |
-| T009 | Create `Category` model (fillable, casts, `transactions()` relation) | pending | T006 |
-| T010 | Create `Transaction` model (fillable, casts, `category()` relation) | pending | T007, T009 |
-| T011 | Create `Setting` model (get/set helpers) | pending | T008 |
-| T012 | Create `CategoryFactory` and `TransactionFactory` for tests | pending | T009, T010 |
-| T013 | Create seed migration `seed_default_categories` (14 defaults via `CategorySeeder`, safe for existing DBs) | pending | T006 |
-| T014 | Create `currencies` migration (code ISO 4217 unique, name, symbol, decimal_places default 2) | pending | T004 |
-| T015 | Create `Currency` model (fillable, casts, default BDT resolution) | pending | T014 |
-| T016 | Create seed migration `seed_common_currencies` (BDT default + USD, EUR, GBP, INR, JPY, PKR, SAR, AED, MYR) | pending | T014 |
-| T017 | Create money helper `App\Support\Money` (currency-aware: resolves active currency, formats minor units → symbol + separators + decimals) | pending | T015, T011 |
+| T006 | Create `categories` migration (name, type, icon, color, timestamps) | done | T004 |
+| T007 | Create `transactions` migration (category_id FK restrict, type, amount integer minor units, note, transaction_date) | done | T006 |
+| T008 | Create `settings` migration (key unique, value, timestamps) | done | T004 |
+| T009 | Create `Category` model (fillable, casts, `transactions()` relation) | done | T006 |
+| T010 | Create `Transaction` model (fillable, casts, `category()` relation) | done | T007, T009 |
+| T011 | Create `Setting` model (get/set helpers) | done | T008 |
+| T012 | Create `CategoryFactory` and `TransactionFactory` for tests | done | T009, T010 |
+| T013 | Create seed migration `seed_default_categories` (14 defaults via `CategorySeeder`, safe for existing DBs) | done | T006 |
+| T014 | Create `currencies` migration (code ISO 4217 unique, name, symbol, decimal_places default 2) | done | T004 |
+| T015 | Create `Currency` model (fillable, casts, default BDT resolution) | done | T014 |
+| T016 | Create seed migration `seed_common_currencies` (BDT default + USD, EUR, GBP, INR, JPY, PKR, SAR, AED, MYR) | done | T014 |
+| T017 | Create money helper `App\Support\Money` (currency-aware: resolves active currency, formats minor units → symbol + separators + decimals) | done | T015, T011 |
 
 ## Phase 2 — Domain Services
 
