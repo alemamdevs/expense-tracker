@@ -69,10 +69,10 @@ Source of truth for scope: `PLAN.md`.
 
 | ID | Task | Status | Depends on |
 |----|------|--------|------------|
-| T029 | Confirm date-input approach from v4 docs (native date-picker plugin vs lightweight date bottom-sheet) | pending | — |
-| T030 | Create `AmountInput` component (decimal keyboard, currency-aware minor-unit handling) | pending | T017 |
-| T031 | Create `CategorySelector` bottom sheet component | pending | T009, T001 |
-| T032 | Build `Add/EditTransaction` screen (segmented type, amount, category, date, note + validation) | pending | T018, T030, T031, T029 |
+| T029 | Confirm date-input approach from v4 docs (native date-picker plugin vs lightweight date bottom-sheet) | done | — |
+| T030 | Create `AmountInput` component (decimal keyboard, currency-aware minor-unit handling) | done | T017 |
+| T031 | Create `CategorySelector` bottom sheet component | done | T009, T001 |
+| T032 | Build `Add/EditTransaction` screen (segmented type, amount, category, date, note + validation) | done | T018, T030, T031, T029 |
 | T033 | Build `Transactions` screen (grouped by date; all/income/expense + date range + category filters; edit/delete w/ confirm) | pending | T018, T026, T023 |
 
 ## Phase 6 — Categories
