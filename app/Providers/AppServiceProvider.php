@@ -2,7 +2,11 @@
 
 namespace App\Providers;
 
+use App\NativeComponents\BalanceCard;
+use App\NativeComponents\EmptyState;
+use App\NativeComponents\TransactionItem;
 use Illuminate\Support\ServiceProvider;
+use Native\Mobile\Edge\ComponentRegistry;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +23,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        ComponentRegistry::components([
+            'balance-card' => BalanceCard::class,
+            'empty-state' => EmptyState::class,
+            'transaction-item' => TransactionItem::class,
+        ]);
     }
 }

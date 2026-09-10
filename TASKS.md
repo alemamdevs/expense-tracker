@@ -43,26 +43,26 @@ Source of truth for scope: `PLAN.md`.
 
 | ID | Task | Status | Depends on |
 |----|------|--------|------------|
-| T018 | Create `App\Services\TransactionService` (create/update/delete/list + filters) | pending | T010 |
-| T019 | Create `App\Services\CategoryService` (create/update/delete with transaction guard) | pending | T009 |
-| T020 | Create `App\Services\StatsService` (balance/income/expense, monthly summary, by-category grouping) | pending | T010 |
-| T021 | Create `App\Services\ThemeService` (7 accent presets map, apply via `Theme::merge`, reset via `Theme::reset`, persist key) | pending | T008, T011, T002 |
-| T022 | Create `App\Services\CurrencyService` (list currencies, get/set active currency, persist to settings) | pending | T015, T011 |
+| T018 | Create `App\Services\TransactionService` (create/update/delete/list + filters) | done | T010 |
+| T019 | Create `App\Services\CategoryService` (create/update/delete with transaction guard) | done | T009 |
+| T020 | Create `App\Services\StatsService` (balance/income/expense, monthly summary, by-category grouping) | done | T010 |
+| T021 | Create `App\Services\ThemeService` (7 accent presets map, apply via `Theme::merge`, reset via `Theme::reset`, persist key) | done | T008, T011, T002 |
+| T022 | Create `App\Services\CurrencyService` (list currencies, get/set active currency, persist to settings) | done | T015, T011 |
 
 ## Phase 3 — App Shell & Navigation
 
 | ID | Task | Status | Depends on |
 |----|------|--------|------------|
-| T023 | Create `NativeLayout` with 4-tab bottom nav (Home/Transactions/Statistics/Settings) + center FAB | pending | T003, T001 |
-| T024 | Register `routes/mobile.php` with `Route::native()` entries (updated as screens land) | pending | T023 |
+| T023 | Create `NativeLayout` with 4-tab bottom nav (Home/Transactions/Statistics/Settings) + center FAB | done | T003, T001 |
+| T024 | Register `routes/mobile.php` with `Route::native()` entries (updated as screens land) | done | T023 |
 
 ## Phase 4 — Dashboard (Home)
 
 | ID | Task | Status | Depends on |
 |----|------|--------|------------|
-| T025 | Create `BalanceCard` component (glass summary card, currency-aware) | pending | T017, T001 |
-| T026 | Create `TransactionItem` child component (keyed `transaction-{{ $id }}`) | pending | T009, T017 |
-| T027 | Create `EmptyState` component | pending | T001 |
+| T025 | Create `BalanceCard` component (glass summary card, currency-aware) | done | T017, T001 |
+| T026 | Create `TransactionItem` child component (keyed `transaction-{{ $id }}`) | done | T009, T017 |
+| T027 | Create `EmptyState` component | done | T001 |
 | T028 | Build `Home` screen (greeting/header, current month, BalanceCard, recent 5, empty state) | pending | T020, T025, T026, T027, T023 |
 
 ## Phase 5 — Transaction CRUD
